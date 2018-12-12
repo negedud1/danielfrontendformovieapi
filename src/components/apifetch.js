@@ -10,7 +10,7 @@ export default class ApiFetch extends Component {
     }
 
     componentWillMount() {
-        fetch ("https://negeduapimovies.herokuapp.com/return/movies", {
+        fetch ("https://negedudapimovie.herokuapp.com/return/movies", {
             method: "GET",
             headers: {
                 "accept": "application/json",
