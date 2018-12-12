@@ -30,17 +30,19 @@ export default class ApiFetch extends Component {
 
   render() {
     return (
-        <div className="container">
-         <div className="fetch-inner-con">
-            <h1>Here are the current Movies</h1>
-            {this.state.movies.map((data, index) => (
-                <div key={index} className="movie-card">
-                    <p>Title: {data[0]}</p>
-                    <p>Rating: {data[1]}</p>
+      <div className="container">
+            <div className="fetch-inner-con">
+                <h1>Here are the current Movies</h1>
+                <div className="card-spacing">
+                    {this.state.movies.map((data, index) => (
+                    <div key={index} className="movie-card">
+                        <p>Title: {data[0]}</p>
+                        <p>Rating: {data[1]}</p>
+                    </div>
+                    ))}
                 </div>
-                ))}
-         </div>
-        </div>
+            </div>
+      </div>
     );
   }
 }

@@ -19,5 +19,29 @@
 }
 
 .fetch-inner-con {
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.movie-card {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.card-spacing {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
