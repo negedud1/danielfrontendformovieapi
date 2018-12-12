@@ -20,7 +20,7 @@ handleSubmit(event) {
     event.preventDefault();
     let title = this.state.title;
     let rating = this.state.rating;
-    fetch("http://localhost:5000/movies/input", {
+    fetch("https://negeduapimovies.herokuapp.com/movies/input", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ handleSubmit(event) {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <h1>Add a movie and a rating</h1>
         <form onSubmit={this.handleSubmit}>
             <label>
